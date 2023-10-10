@@ -11,3 +11,53 @@
 
 
 /*////////////////////////---------------->Registre<-------------------////////////////////////*/
+
+
+
+/*////////////////////////---------------->Cataleg<-------------------////////////////////////*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+/*div.gallery img {*/
+/*    width: 100%;*/
+/*    height: calc(100%-3px);*/
+/*}*/
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 ;
+    float: left;
+    width: 24.90%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.90%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
