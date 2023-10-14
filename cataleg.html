@@ -3,113 +3,195 @@
 <head>
     <link type="text/css" href="ProjecteLEA.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>cataleg</title>
 </head>
 <body>
 <div id="cat_container">
     <div id="cat_filtres">
         <ul>
-            <li>marca</li>
-            <li>tipus</li>
-            <li>preu(rang)</li>
-            <li>talla</li>
-            <li></li>
+            <li>*work in progress*</li>
+            <li>
+                <select name="marca" class="btn_cat_filter" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marca
+                        <option><a class="dropdown_item" href="#">Marca1</a></option>
+                        <option><a class="dropdown_item" href="#">Marca2</a></option>
+                        <option><a class="dropdown_item" href="#">Marca3</a></option>
+                        <option><a class="dropdown_item" href="#">Marca4</a></option>
+                </select>
+            </li>
+            <li>
+                <select name="tipus" class="btn_cat_filter" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marca
+                    <option><a class="dropdown_item" href="#">Tipus1</a></option>
+                    <option><a class="dropdown_item" href="#">Tipus2</a></option>
+                    <option><a class="dropdown_item" href="#">Tipus3</a></option>
+                    <option><a class="dropdown_item" href="#">Tipus4</a></option>
+                </select>
+            </li>
+            <li>preu(rang)
+                <input type="range" min="5" max="500">
+            </li>
+            <li>talla
+                <input type="number">
+            </li>
         </ul>
-    </div>
-    <div id="cat_slider">
-
     </div>
     <div id="cat_reco">
         <h2>Recomanacions</h2>
         <div class="cat_grid" id="cat_reco_grid">
-                <div class="gallery">
-                    <a target="_blank" href="img/shoe1.png">
-                        <img src="img/shoe1.png" alt="Northern Lights" width="700" height="500">
-                    </a>
-                    <div class="desc">Add a description of the image here</div>
-                </div>
-                <div class="gallery">
-                        <a target="_blank" href="img/shoe2.png">
-                            <img src="img/shoe2.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                </div>
-                <div class="gallery">
-                        <a target="_blank" href="img/shoe3.png">
-                            <img src="img/shoe3.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                </div>
-                <div class="gallery">
-                        <a target="_blank" href="img/shoe4.png">
-                            <img src="img/shoe4.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                </div>
-                <div class="gallery">
-                        <a target="_blank" href="img/shoe5.png">
-                            <img src="img/shoe5.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
-                </div>
-                <div class="gallery">
-                        <a target="_blank" href="img/shoe6.png">
-                            <img src="img/shoe6.png" alt="Northern Lights" width="700" height="500">
-                        </a>
-                        <div class="desc">Add a description of the image here</div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_1" >
+                <a target="_blank" href="img/shoe1.png">
+                    <img class="soh-front" src="img/shoe1.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe1b.png" alt="" width="700" height="500">
+                </a>
+                </figure>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_2">
+                <a target="_blank" href="img/shoe2.png">
+                    <img class="soh-front" src="img/shoe2.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe2b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_3">
+                <a target="_blank" href="img/shoe3.png">
+                    <img class="soh-front" src="img/shoe3.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe3b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_4">
+                <a target="_blank" href="img/shoe4.png">
+                    <img class="soh-front" src="img/shoe4.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe4b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_5">
+                <a target="_blank" href="img/shoe5.png">
+                    <img class="soh-front" src="img/shoe5.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe5b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_reco" id="gallery_reco_6">
+                <a target="_blank" href="img/shoe6.png">
+                    <img class="soh-front" src="img/shoe6.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe6b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
                 </div>
         </div>
     </div>
     <div id="cat_popu">
         <h2> Popular</h2>
         <div class="cat_grid" id="cat_popu_grid">
-
+            <div class="gallery" class="gallery_popu" id="gallery_popu_1" >
+                <a target="_blank" href="img/shoe7.png">
+                    <img class="soh-front" src="img/shoe7.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe7b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_popu" id="gallery_popu_2">
+                <a target="_blank" href="img/shoe8.png">
+                    <img class="soh-front" src="img/shoe8.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe8b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_popu" id="gallery_popu_3">
+                <a target="_blank" href="img/shoe9.png">
+                    <img class="soh-front" src="img/shoe9.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe9b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_popu" id="gallery_popu_4">
+                <a target="_blank" href="img/shoe10.png">
+                    <img class="soh-front" src="img/shoe10.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe10b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_popu" id="gallery_popu_5">
+                <a target="_blank" href="img/shoe11.png">
+                    <img class="soh-front" src="img/shoe11.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe11b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
+            <div class="gallery" class="gallery_popu" id="gallery_popu_6">
+                <a target="_blank" href="img/shoe12.png">
+                    <img class="soh-front" src="img/shoe12.png" alt="" width="700" height="500">
+                    <img class="soh-back" src="img/shoe12b.png" alt="" width="700" height="500">
+                </a>
+                <div class="desc">--NOM-- </div>
+                <div class="preu">XXX€</div>
+                <div class="add"><button>+</button></div>
+            </div>
         </div>
     </div>
     <div id="cat_marca">
-        <h2> Popular</h2>
+        <h2>Marques</h2>
         <div class="cat_grid" id="cat_marca_grid">
-
+            <div  class="gallery_marca" id="gallery_marca_1" >
+                    <img src="img/marca1.png" alt="" width="600" height="600">
+                    <div class="middle">
+                        <div class="text_marca">-OPEN-</div>
+                    </div>
+            </div>
+            <div  class="gallery_marca" id="gallery_marca_2">
+                    <img  src="img/marca2.png" alt="" width="600" height="600">
+                    <div class="middle">
+                        <div class="text_marca">-OPEN-</div>
+                    </div>
+            </div>
+            <div  class="gallery_marca" id="gallery_marca_3">
+                    <img  src="img/marca3.png" alt="" width="600" height="600">
+                    <div class="middle">
+                        <div class="text_marca">-OPEN-</div>
+                    </div>
+            </div>
+            <div  class="gallery_marca" id="gallery_marca_4">
+                    <img src="img/marca4.png" alt="" width="600" height="600">
+                    <div class="middle">
+                        <div class="text_marca">-OPEN-</div>
+                    </div>
+            </div>
+            <div  class="gallery_marca" id="gallery_marca_5">
+                    <img  src="img/marca5.png" alt="" width="600" height="600">
+                    <div class="middle">
+                        <div class="text_marca">-OPEN-</div>
+                    </div>
+            </div>
         </div>
     </div>
 </div>
-
-<!--<div class="responsive">-->
-<!--    <div class="gallery">-->
-<!--        <a target="_blank" href="shoes1.jpg">-->
-<!--            <img src="shoes1.jpg" alt="Cinque Terre" width="100" height="180">-->
-<!--        </a>-->
-<!--        <div class="desc">Add a description of the image here</div>-->
-<!--    </div>-->
-<!--</div>-->
-
-
-<!--<div class="responsive">-->
-<!--    <div class="gallery">-->
-<!--        <a target="_blank" href="shoes2.jpg">-->
-<!--            <img src="shoes2.jpg" alt="Forest" width="100" height="180">-->
-<!--        </a>-->
-<!--        <div class="desc">Add a description of the image here</div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="responsive">-->
-<!--    <div class="gallery">-->
-<!--        <a target="_blank" href="shoes3.jpg">-->
-<!--            <img src="shoes3.jpg" alt="Northern Lights" width="100" height="180">-->
-<!--        </a>-->
-<!--        <div class="desc">Add a description of the image here</div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="responsive">-->
-<!--    <div class="gallery">-->
-<!--        <a target="_blank" href="shoes4.jpg">-->
-<!--            <img src="shoes4.jpg" alt="Mountains" width="100" height="180">-->
-<!--        </a>-->
-<!--        <div class="desc">Add a description of the image here</div>-->
-<!--    </div>-->
-<!--</div>-->
-
 </body>
 </html>
