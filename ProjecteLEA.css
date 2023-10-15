@@ -20,7 +20,7 @@ header{
 #logo img{
     width: 100%;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     #logo {
         display: none;
     }
@@ -86,7 +86,7 @@ header{
     background-color: #555;
     color: #8f8fff;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     #menuTop ul {
         flex-direction: column;
         align-items: center;
@@ -122,7 +122,7 @@ header{
     background-color: #f0f0f0;
     text-decoration: underline;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     #menuCataleg{
         padding-top: 26em;
     }
@@ -252,7 +252,12 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+    .divCistella {
+        margin: 26em auto 1em;
+    }
 
+}
 .divCistella h1 {
     text-align: center;
 }
@@ -289,6 +294,12 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+    .divCondicions {
+        margin: 26em auto 1em;
+    }
+
+}
 .divCondicions h2 {
     margin: 0;
     padding: 0;
@@ -311,6 +322,12 @@ body{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+    .divContacte {
+        margin: 26em auto 1em;
+    }
+
+}
 .divContacte h2 {
     color: #333;
     font-size: 24px;
@@ -329,6 +346,12 @@ body{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     text-align: justify;
+}
+@media (max-width: 768px) {
+    #divFormulari {
+        margin: 26em auto 1em;
+    }
+
 }
 
 #divFormulari h1 {
@@ -384,10 +407,11 @@ input[type="text"],
     height: 150em;
 
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     #cat_container {
         margin: auto;
         max-width: 700px;
+        padding-top: 29em;
     }
 
 }
