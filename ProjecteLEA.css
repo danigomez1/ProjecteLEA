@@ -8,6 +8,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 #logo {
     flex: 1;
@@ -93,6 +97,9 @@ header{
 }
 
 /*menuCataleg*/
+#menuCataleg{
+    padding-top: 11em;
+}
 #menuCataleg ul {
     list-style-type: none;
     padding: 0;
@@ -115,6 +122,9 @@ header{
     text-decoration: underline;
 }
 @media (max-width: 720px) {
+    #menuCataleg{
+        padding-top: 26em;
+    }
     #menuCataleg ul {
         flex-direction: column;
         align-items: center;
