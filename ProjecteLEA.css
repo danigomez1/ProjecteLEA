@@ -12,6 +12,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 #logo {
     flex: 1;
@@ -255,6 +256,7 @@ body{
 /*////////////////////////---------------->Cataleg<-------------------////////////////////////*/
 
 #cat_container{
+    padding-top: 15em;
     margin: auto;
     max-width: 1200px;
     height: 150em;
