@@ -2,9 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="autor" content="Daniel Gómez, Roger Faixeda i David Alcaraz">
+    <meta name="descripcio" content="Pàgina principal de la nostre web, ZapasWapas">
+    <title>ProjecteLEA</title>
+    <link rel="stylesheet" type="text/css" href="ProjecteLEA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
 </head>
 <body>
-    <
+<header>
+    <div id="logo">
+        <img src="img/logoZW.jpg">
+    </div>
+    <div id="contenidor2">
+        <div id="conjunt1">
+            <div id="titol1">
+                <h1>ZapasWapas</h1>
+            </div>
+            <div id="barra">
+                <input type="text" id="busqueda" name="barra1" placeholder="Busca una marca o model">
+                <input type="submit" value="Buscar">
+            </div>
+        </div>
+        <div id="menuTop">
+            <ul>
+                <li><a href="Principal.html">Inici</a></li>
+                <li><a href="Contacte.html">Contacte</a></li>
+                <li><a href="Condicions.html">Condicions</a></li>
+                <li><a href="cataleg.html">Catàleg</a></li>
+                <li><a href="Cistella.html">Cistella</a></li>
+                <li><a href="Registre.html">Registre</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="divFormulari">
+        <h2>Registre Client</h2>
+        <form action="process.php" method="post">
+            <label for="noms">Noms <span>*</span></label>
+            <input type="text" id="noms" name="noms" required>
+
+            <label for="cognoms">Cognoms <span>*</span></label>
+            <input type="text" id="cognoms" name="cognoms" required>
+
+            <label for="adreca">Adreça <span>*</span></label>
+            <input type="email" id="adreca" name="adreca" required>
+
+            <label for="telefons">Telèfons <span>*</span></label>
+            <input type="tel" id="telefons" name="telefons" required>
+
+            <input type="submit" value="Registrar-se">
+            <p>En registrar-te, declares haver llegit i acceptat els nostres Termes i Condicions. Consulta la nostra Política de Privadesa per obtenir informació sobre com processem les teves dades.</p>
+        </form>
+    </div>
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            ZapasWapas Copyright © 2023 ZapasWapas - All rights reserved || Designed By: David, Roger and Dani
+        </div>
+    </div>
+</footer>
 </body>
 </html>

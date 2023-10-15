@@ -223,34 +223,153 @@ body{
     margin:0% 1%;
 }
 
-@media (max-width:720px){
-    .footer{
-        text-align:left;
-        padding:5%;
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
     }
-    .footer .row ul li{
-        display:block;
-        margin:10px 0px;
-        text-align:left;
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
     }
-    .footer .row a i{
-        margin:0% 3%;
+
+    .footer .row a i {
+        margin: 0% 3%;
     }
 }
 
-/*////////////////////////---------------->Catàleg<--------------------////////////////////////*/
-
-
 /*////////////////////////---------------->Cistella<-------------------////////////////////////*/
+.divCistella {
+    max-width: 600px;
+    margin: 11em auto 1em;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.divCistella h1 {
+    text-align: center;
+}
+
+.divCistella .producte {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.divCistella .producte img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.divCistella button {
+}
+
+.divCistella .total {
+    text-align: right;
+    font-weight: bold;
+}
 
 /*////////////////////////---------------->Condicions<-----------------////////////////////////*/
+.divCondicions {
+    max-width: 800px;
+    margin: 11em auto 1em;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.divCondicions h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+.divCondicions h3 {
+    color: #333;
+    font-size: 22px;
+    margin-top: 20px;
+}
 
 
 /*////////////////////////---------------->Contacte<-------------------////////////////////////*/
-
+.divContacte {
+    max-width: 800px;
+    margin: 11em auto 1em;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.divContacte h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.divContacte p {
+    margin: 0 0 20px;
+}
 
 /*////////////////////////---------------->Registre<-------------------////////////////////////*/
+#divFormulari {
+    max-width: 300px;
+    margin: 11em auto 1em;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+#divFormulari h1 {
+    text-align: center;
+}
+
+#divFormulari form {
+    display: flex;
+    flex-direction: column;
+}
+
+#divFormulari label {
+    margin-top: 10px;
+}
+
+#divFormulari
+input[type="text"],
+& input[type="tel"],
+& input[type="email"]
+{
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#divFormulari span {
+    color: red;
+    font-weight: bold;
+}
+
+#divFormulari input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#divFormulari input[type="submit"]:hover {
+    background-color: #0056b3;
+    }
 
 
 /*////////////////////////---------------->Cataleg<-------------------////////////////////////*/
