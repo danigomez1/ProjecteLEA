@@ -8,6 +8,35 @@
     <title>cataleg</title>
 </head>
 <body>
+<!--creació de la capçalera-->
+<header>
+    <div id="logo">
+        <img src="img/logoZW.jpg">
+    </div>
+    <div id="contenidor2">
+        <div id="conjunt1">
+            <div id="titol1">
+                <h1>ZapasWapas</h1>
+            </div>
+            <div id="barra">
+                <input type="text" id="busqueda" name="barra1" placeholder="Busca una marca o model">
+                <input type="submit" value="Buscar">
+            </div>
+        </div>
+        <div id="menuTop">
+            <ul>
+                <li><a href="Principal.html">Inici</a></li>
+                <li><a href="Contacte.html">Contacte</a></li>
+                <li><a href="Condicions.html">Condicions</a></li>
+                <li><a href="cataleg.html">Catàleg</a></li>
+                <li><a href="Cistella.html">Cistella</a></li>
+                <li><a href="Registre.html">Registre</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
 <!--------------------FILTRES--------------------------->
 <div id="cat_container">
     <div id="cat_filtres">
@@ -41,7 +70,7 @@
     </div>
     <!--------------------RECOMANACIONS--------------------------->
     <div id="cat_reco">
-        <h2>Recomanacions</h2>
+        <h2 class="cat_h2">Recomanacions</h2>
         <div class="cat_grid" id="cat_reco_grid">
             <div class="gallery" class="gallery_reco" id="gallery_reco_1" >
                 <a target="_blank" href="img/shoe1.png">
@@ -102,7 +131,7 @@
     </div>
     <!--------------------POPULARS--------------------------->
     <div id="cat_popu">
-        <h2> Popular</h2>
+        <h2 class="cat_h2"> Popular</h2>
         <div class="cat_grid" id="cat_popu_grid">
             <div class="gallery" class="gallery_popu" id="gallery_popu_1" >
                 <a target="_blank" href="img/shoe7.png">
@@ -212,7 +241,7 @@
     </div>
     <!--------------------MARQUES--------------------------->
     <div id="cat_marca">
-        <h2>Marques</h2>
+        <h2 class="cat_h2">Marques</h2>
         <div class="cat_grid" id="cat_marca_grid">
             <div  class="gallery_marca" id="gallery_marca_1" >
                     <img src="img/marca1.png" alt="" width="600" height="600">
@@ -247,5 +276,30 @@
         </div>
     </div>
 </div>
+    <!--creació del peu de la web-->
+<footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                ZapasWapas Copyright © 2023 ZapasWapas - All rights reserved || Designed By: David, Roger and Dani
+            </div>
+        </div>
+</footer>
 </body>
 </html>

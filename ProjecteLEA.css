@@ -8,10 +8,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ededed;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
 }
 #logo {
     flex: 1;
@@ -257,12 +257,14 @@ body{
 #cat_container{
     margin: auto;
     max-width: 1200px;
-    height: 170em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    height: 150em;
+
+}
+@media (max-width: 720px) {
+    #cat_container {
+        margin: auto;
+        max-width: 700px;
+    }
 
 }
 #cat_filtres{
@@ -286,21 +288,17 @@ body{
 
 #cat_reco, #cat_popu, #cat_marca {
     width: 100%;
-    overflow: auto;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: scroll;
     margin-bottom: 1em;
     padding: 1em;
 
 }
-h2 {
-    background-color: grey;
+.cat_h2 {
+    color: white;
     width: max-content;
     padding: .5em;
     font-size: 2em;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #333333;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 1em;
 }
@@ -354,9 +352,6 @@ h2 {
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     margin:0 5px;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
     position: relative;
 
 }
@@ -448,12 +443,6 @@ h2 {
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
-
-body {
-    font-family: sans-serif;
-}
-
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -494,11 +483,11 @@ body {
 }
 
 .caption {
-    color: white;
+    color: #333333;
     text-shadow: 1px 1px black;
     font-size: 8vw;
     position: absolute;
-    bottom: 8vw;
+    bottom: 16vw;
     right: 4vw;
 }
 
@@ -544,7 +533,11 @@ body {
 
     .caption {
         font-size: 96px;
-        bottom: 96px;
+        bottom: 192px;
         right: 50px;
+    }
+    .slide img {
+        height: 500px;
+
     }
 }
