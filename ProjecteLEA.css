@@ -276,7 +276,10 @@ body{
     max-height: 100px;
 }
 
-.divCistella button {
+.divCistella .button {
+    width: 5em;
+    height: 2em;
+    margin: auto;
 }
 
 .divCistella .total {

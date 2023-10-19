@@ -1,0 +1,223 @@
+/*header*/
+/*menuCataleg*/
+/*article*/
+/*aside*/
+/*footer*/
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ededed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+
+#logo {
+  flex: 1; }
+  #logo img {
+    width: 100%; }
+
+#contenidor2 {
+  display: flex;
+  flex-direction: column;
+  flex: 8; }
+
+#titol1 {
+  font-family: "sans-serif";
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  color: #9d539d; }
+
+#conjunt1 {
+  flex: 1;
+  border-radius: 4px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5px; }
+  #conjunt1 input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    margin-left: -25px; }
+  #conjunt1 input[type="submit"] {
+    background-color: #9d539d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer; }
+    #conjunt1 input[type="submit"]:hover {
+      background-color: #0056b3; }
+
+#menuTop {
+  flex: 1;
+  margin-top: 0.6em; }
+  #menuTop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between; }
+  #menuTop li {
+    margin: 0; }
+    #menuTop li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff; }
+      #menuTop li a:hover {
+        background-color: #555;
+        color: #8f8fff; }
+
+#menuCataleg {
+  padding-top: 11em; }
+  #menuCataleg ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  #menuCataleg li {
+    margin: 0; }
+    #menuCataleg li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #000; }
+      #menuCataleg li a:hover {
+        background-color: #f0f0f0;
+        text-decoration: underline; }
+
+#carrousel {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; }
+  #carrousel img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center; }
+
+p {
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+#ofertes {
+  font-size: 22px;
+  text-decoration: underline; }
+
+#selectimatges section {
+  display: flex;
+  width: 100%;
+  height: 430px; }
+  #selectimatges section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5s ease; }
+    #selectimatges section img:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%); }
+
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center; }
+  .footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: grey;
+    font-size: 0.8em; }
+    .footer .row a {
+      text-decoration: none;
+      color: grey;
+      transition: 0.5s; }
+      .footer .row a:hover {
+        color: #fff; }
+      .footer .row a i {
+        font-size: 2em;
+        margin: 0% 1%; }
+    .footer .row ul {
+      width: 100%; }
+      .footer .row ul li {
+        display: inline-block;
+        margin: 0px 30px; }
+
+.divCistella {
+  max-width: 600px;
+  margin: 12em auto 1em;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .divCistella h1 {
+    text-align: center; }
+  .divCistella .producte {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px; }
+    .divCistella .producte img {
+      max-width: 100px;
+      max-height: 100px; }
+  .divCistella .button {
+    width: 5em;
+    height: 2em;
+    margin: auto; }
+  .divCistella .total {
+    text-align: right;
+    font-weight: bold; }
+
+@media (max-width: 768px) {
+  #logo {
+    display: none; }
+
+  #menuTop ul {
+    flex-direction: column;
+    align-items: center; }
+  #menuTop li {
+    margin: 5px 0; }
+
+  #menuCataleg {
+    padding-top: 26em; }
+    #menuCataleg ul {
+      flex-direction: column;
+      align-items: center; }
+    #menuCataleg li {
+      margin: 5px 0; }
+
+  .divCistella {
+    margin: 26em auto 1em; } }
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%; }
+    .footer .row ul li {
+      display: block;
+      margin: 10px 0px;
+      text-align: left; }
+    .footer .row a i {
+      margin: 0% 3%; } }
+
+/*# sourceMappingURL=codi.css.map */
